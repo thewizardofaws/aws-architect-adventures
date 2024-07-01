@@ -1,42 +1,10 @@
-<!This is for a home page of a website>
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - AWS Architect Adventure</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+{% include 'partials/header.html' %}
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="podcast.html">Podcast</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="aws-utah.html">AWS Utah</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Welcome to AWS Architect Adventure</h1>
-            <p>Join me on my journey as an AWS evangelist, exploring architecture, DevOps, and more.</p>
-        </section>
-        <section class="featured-content">
-            <h2>Featured Blog Posts</h2>
-            <!-- List of featured blog posts -->
-        </section>
-        <section class="featured-podcast">
-            <h2>Latest Podcast Episodes</h2>
-            <!-- List of latest podcast episodes -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 AWS Architect Adventure. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+    {% include 'partials/nav.html' %}
+    <div class="content">
+        <h1>Welcome to AWS Architect Adventures</h1>
+        <p>Your journey to mastering AWS starts here!</p>
+    </div>
+    {% include 'partials/footer.html' %}
 </body>
 </html>
